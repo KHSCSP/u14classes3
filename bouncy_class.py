@@ -1,7 +1,7 @@
 import pygame, random, math
 
 class Bouncy:
-    def __init__(self, x=100, y=100, size=10):
+    def __init__(self, x=100, y=100, size=10, col=None):
         pass
 
    
