@@ -2,33 +2,15 @@ import pygame, random, math
 
 class Bouncy:
     def __init__(self, x=100, y=100, size=10, col=None):
-        self.x = x
-        self.y = y
-        
-        self.xv = 0
-        while self.xv == 0:
-            self.xv = random.randint(-3, 3)
-        
-        self.yv = random.randint(-3, 3)
-        self.size = size
-        if col == None:
-            self.color = Bouncy.rand_col()
-        else:
-            self.color = col
+        pass
 
    
     def draw(self, screen):
-        pygame.draw.circle(screen, self.color, (self.x, self.y), self.size)
+        pass
     
 
     def move(self, screen):
-        w, h = screen.get_size()
-        if self.x < 0 or self.x > w:
-            self.xv *= -1
-        if self.y < 0 or self.y > h:
-            self.yv *= -1
-        self.x += self.xv
-        self.y += self.yv
+        pass
 
 
     def rand_move(self, screen):
