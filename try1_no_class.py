@@ -11,8 +11,8 @@ pygame.display.set_caption('Hello World!')
 x1 = 100
 y1 = 100
 size1 = 10
-xV1 = 3
-yV1 = -2
+xv1 = 3
+yv1 = -2
 col1 = (0,255,0)
 
 
@@ -27,17 +27,13 @@ while True:
     screen.fill((255,255,255))
     
     # TODO if hit edge, bounce
-    if x1 < 0 or x1 > w:
-        xV1 *= -1
-    if y1 < 0 or y1 > h:
-        yV1 *= -1
+    
 
     # TODO move
-    x1 += xV1
-    y1 += yV1
+    
 
     # TODO draw the circle
-    pygame.draw.circle(screen, col1, (x1,y1), size1)
+    
 
     
     # TODO second and third shapes: bounce, move, draw
