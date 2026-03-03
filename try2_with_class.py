@@ -5,6 +5,8 @@ from bouncy_class import Bouncy
 pygame.init()
 screen = pygame.display.set_mode((800, 600))
 pygame.display.set_caption('Hello World!')
+clock = pygame.time.Clock()
+FPS = 30
 
 # define a few bouncy objects
 
@@ -23,4 +25,4 @@ while True:
 
 
     pygame.display.update()
-    pygame.time.delay(2)
+    clock.tick(FPS)
