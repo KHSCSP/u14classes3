@@ -6,6 +6,8 @@ h = 600
 pygame.init()
 screen = pygame.display.set_mode((w, h))
 pygame.display.set_caption('Hello World!')
+clock = pygame.time.Clock()
+FPS = 30
 
 # TODO initial values for position, size, and velocity
 x1 = 100
@@ -41,5 +43,5 @@ while True:
     
     # slow it down a bit
     pygame.display.update()
-    pygame.time.delay(5)
+    clock.tick(FPS)
   
